@@ -71,7 +71,7 @@ public class SecurityConfig {
                         .anyRequest().authenticated()
                 )
                 .headers(headers -> headers
-                .frameOptions(frame -> frame.sameOrigin()) // sameOrigin pour permettre à ton site d'utiliser des iframes internes, mais bloquer les externes
+                .frameOptions(frame -> frame.sameOrigin())
                 );
 
 
