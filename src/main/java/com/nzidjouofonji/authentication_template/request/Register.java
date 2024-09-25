@@ -10,7 +10,14 @@ public class Register {
 
     @NotBlank
     @NotNull
+    @Size(min = 4, max = 10)
     private String username;
+
+    @NotBlank
+    private String lastName;
+
+    @NotBlank
+    private String firstName;
 
     @Email
     @NotBlank
